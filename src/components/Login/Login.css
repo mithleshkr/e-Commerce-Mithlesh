@@ -1,0 +1,34 @@
+.Login-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.form-container{
+    width: 40%;
+    margin-top: 10%;
+    
+}
+.content-container{
+    width: 40%;
+    margin-top: 10%;
+}
+.form-inputs-container{
+    padding: 20px;
+}
+.login-title{
+    padding: 20px;
+    font-size: 20px;
+}
+.ant-btn{
+    width: 338px;
+    margin-left: -168px ;
+    background-color: black ;
+    color: white;
+}
+.register-details-container{
+    margin-left: -200px;
+    margin-right: 300px;
+    margin-top: 80px;
+}
