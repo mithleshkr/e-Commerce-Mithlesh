@@ -1,0 +1,38 @@
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+ul li a{
+    text-decoration: none;
+    border-left: 3px solid transparent; 
+    color: black;
+    padding: 10px 20px ;
+    margin-top: 0.3rem;
+}
+ul li a{
+    width: 220px;
+}
+ul li a:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.active{
+    background-color: black;
+    color: #fff;
+    border-left: 3px solid #1890ff;
+ 
+
+}
+.li-div{
+    display: flex;
+    align-items: center;
+    
+    
+    
+}

@@ -23,7 +23,7 @@ const Header = () => {
           <div>
             <Menu onClick={toggleDrawer} fontSize="large" className="menu-hover" />
             <Drawer open={isOpen} onClose={toggleDrawer} direction="left" style={{marginTop:"10vh",marginLeft:"10px"}}>
-              <div style={{padding:"10px"}}><Sidebar /></div>
+              <div><Sidebar  /></div>
             </Drawer>
           </div>
           <div>
@@ -39,7 +39,9 @@ const Header = () => {
         </div>
         <div className="header-right-container">
           <div>Search</div>
-          <div onClick={loginScreen}>Login</div>
+          <div
+          className="login-hover"
+          onClick={loginScreen}>Login</div>
         </div>
       </div>
     </div>

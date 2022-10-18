@@ -28,8 +28,14 @@
 }
 .logo-img{
     border-radius: 50%;
+    cursor: pointer;
     
 }
 .menu-hover:hover{
+    color: #1890ff;
+    cursor: pointer;
+}
+.login-hover:hover{
+    cursor: pointer;
     color: #1890ff;
 }

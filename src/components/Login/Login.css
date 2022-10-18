@@ -32,3 +32,21 @@
     margin-right: 300px;
     margin-top: 80px;
 }
+.login-button-container{
+    width: 338px;
+    background-color: black;
+    color: white;
+    
+}
+.login-button-container:hover{
+    cursor: pointer;
+}
+.register-button-container{
+    width: 338px;
+    background-color: black;
+    color: white;
+    margin-left: -200px;
+}
+.register-button-container:hover{
+    cursor: pointer;
+}
