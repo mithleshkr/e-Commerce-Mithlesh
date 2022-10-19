@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import videoone from './videoone.mp4'
 
 import "./Dashboard.css";
 
@@ -24,15 +25,15 @@ const Dashboard = () => {
         </div>
         <div>
           <video
-            width="100%"
-            height="500vh"
+           width="100%"
             className="video-container"
             playsInline
             loop
             muted
             alt="All the devices"
+            src={videoone}
             //src="https://iz-my.sharepoint.com/:v:/g/personal/mithlesh_kumar_intelizign_com/Edy7Ca-HZCJEjHvzDtYDhZkBhKbRcPC4WwE47GPEzvD3Gw?e=SQEjO0"
-            src="https://media.istockphoto.com/id/1360048537/video/futuristic-animated-concept-big-data-center-chief-technology-officer-using-laptop-standing-in.mp4?s=mp4-640x640-is&k=20&c=qfseEZiJxfYc26fY6oD2hRZp4stCUQAHBxFgbPJCrKc="
+            //src="https://media.istockphoto.com/id/1360048537/video/futuristic-animated-concept-big-data-center-chief-technology-officer-using-laptop-standing-in.mp4?s=mp4-640x640-is&k=20&c=qfseEZiJxfYc26fY6oD2hRZp4stCUQAHBxFgbPJCrKc="
             ref={videoEl}
           />
         </div>
