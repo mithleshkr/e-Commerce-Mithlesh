@@ -1,23 +1,134 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './Sidebar.css'
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
+import { Menu } from "@mui/icons-material";
+import "./Sidebar.css";
+import { useNavigate } from "react-router-dom";
 
-const Sidebar = () => {
+export default function Sidebar() {
+  const navigate= useNavigate();
+  const [state, setState] = React.useState({});
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <Box
+      style={{ backgroundColor: "black", color: "orange" }}
+      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <List>
+        {["Dashboard", "Register", "Login", "Drafts"].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon style={{ color: "orange" }}>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
   return (
-    <div>
-
-    <ul>
-    <li className="li-div"><NavLink exact activeClassName="active" to='/'>Dashboard</NavLink></li>
-            <li className="li-div" ><NavLink activeClassName="active" to='/register'>Register </NavLink></li>
-            <li className="li-div"><NavLink activeClassName="active" to='/login'>Login</NavLink></li>
-            </ul>
+    <div >
+      {["left"].map((anchor) => (
+        <React.Fragment key={anchor} style={{ backgroundColor: "black" }}>
+          <Menu
+            className="menu-icon"
+            onClick={toggleDrawer(anchor, true)}
+            fontSize="large"
+          />
+          <Drawer
+            className="drawer-container"
+            anchor={anchor}
+            open={state[anchor]}
+            onClose={toggleDrawer(anchor, false)}
+          >
+          <div>
+            <div>
+              <List>
+              <ListItem  disablePadding>
+              <ListItemButton>
+                <ListItemIcon style={{ color: "orange" }}>
+                 <MailIcon />
+                </ListItemIcon>
+                <ListItemText style={{color:"orange"}} onClick={()=>navigate('/')}>Dashboard</ListItemText>
+              </ListItemButton>
+            </ListItem>
+              </List>
+            </div>
+            <div>
+            <List>
+              <ListItem  disablePadding>
+              <ListItemButton>
+                <ListItemIcon style={{ color: "orange" }}>
+                 <MailIcon />
+                </ListItemIcon>
+                <ListItemText style={{color:"orange"}} onClick={()=>navigate('/register')}>Register</ListItemText>
+              </ListItemButton>
+            </ListItem>
+              </List>
+            </div>
+            <div>
+            <List>
+              <ListItem  disablePadding>
+              <ListItemButton>
+                <ListItemIcon style={{ color: "orange" }}>
+                 <MailIcon />
+                </ListItemIcon>
+                <ListItemText style={{color:"orange"}} onClick={()=>navigate('/login')}>Login</ListItemText>
+              </ListItemButton>
+            </ListItem>
+              </List>
+            </div>
+          </div>
+            {/* {list(anchor)} */}
+          </Drawer>
+        </React.Fragment>
+      ))}
     </div>
-  )
+  );
 }
 
-export default Sidebar
+// import React from 'react';
+// import { NavLink } from 'react-router-dom';
+// import './Sidebar.css'
 
+// const Sidebar = () => {
+//   return (
+//     <div>
 
+//     <ul>
+//     <li className="li-div"><NavLink exact activeClassName="active" to='/'>Dashboard</NavLink></li>
+//             <li className="li-div" ><NavLink activeClassName="active" to='/register'>Register </NavLink></li>
+//             <li className="li-div"><NavLink activeClassName="active" to='/login'>Login</NavLink></li>
+//             </ul>
+//     </div>
+//   )
+// }
+
+// export default Sidebar
 
 // import React, { useState } from 'react';
 // import 'antd/dist/antd.css';
@@ -41,7 +152,7 @@ export default Sidebar
 //     getItem('Option 3', '3'),
 //     getItem('Option 4', '4'),
 //   ]),
- 
+
 // ];
 
 // // submenu keys of first level

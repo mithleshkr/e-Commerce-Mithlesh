@@ -1,4 +1,4 @@
-ul {
+/* ul {
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -35,4 +35,16 @@ ul li a:hover{
     
     
     
+} */
+.drawer-container{
+
+
+}
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper{
+    background-color: black !important;
+    width: 250px ;
+    align-items: center;
+}
+.menu-icon{
+    cursor: pointer;
 }

@@ -11,7 +11,10 @@
 }
 .login-btn{
     background-color: black !important;
-    color: white !important;
+    color: orange !important;
+}
+.login-btn:hover{
+    border-color: orange !important;
 }
 
 .blank-login-space{
@@ -25,8 +28,10 @@
 }
 .register-btn{
     background-color: black !important;
-    color: white !important;
-    
+    color: orange !important;   
+}
+.register-btn:hover{
+    border-color: orange !important;
 }
 
 /* .Login-main-container{

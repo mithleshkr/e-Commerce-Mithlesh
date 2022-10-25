@@ -1,13 +1,13 @@
 import React from "react";
 import { Button, TextField } from "@mui/material";
-import './Login.css'
+import "./Login.css";
 
 const Login = () => {
   return (
-    <div style={{padding:"30px"}}>
-      <div className="login-container" >
+    <div style={{ padding: "30px" }}>
+      <div className="login-container">
         <div className="login-form-container">
-        <h3>LOGIN</h3>
+          <h3>LOGIN</h3>
           <TextField
             type="email"
             label="Email"
@@ -22,35 +22,34 @@ const Login = () => {
             variant="standard"
           />
           <br />
-          <br/>
-          <Button
-          className="login-btn"
-          variant="outlined"
-          size="small"
-          >Login</Button>
+          <br />
+          <Button className="login-btn" variant="outlined" size="small">
+            Login
+          </Button>
         </div>
-        <div className="blank-login-space">
-       {/*  blank space */}
-        </div>
+        <div className="blank-login-space">{/*  blank space */}</div>
         <div className="login-register">
-        <div>
-        <h3>REGISTER</h3>
-        <br/><br/>
-        <p style={{padding:"5px"}}>
-             IF YOU STILL DON'T HAVE A <b>MITHLESH.COM</b> ACCOUNT, USE THIS
-             OPTION TO ACCESS THE REGISTRATION FORM. BY GIVING US YOUR DETAILS,
-             PURCHASING IN <b>MITHLESH.COM</b> WILL BE FASTER AND AN ENJOYABLE
-             EXPERIENCE
-           </p>
-           <br/>
-           
-           <Button
-           fullWidth
-          className="register-btn"
-          variant="outlined"
-          size="small"
-          >Register</Button>
-        </div>
+          <div>
+            <h3>REGISTER</h3>
+            <br />
+            <br />
+            <p style={{ padding: "5px" }}>
+              IF YOU STILL DON'T HAVE A <b>MITHLESH.COM</b> ACCOUNT, USE THIS
+              OPTION TO ACCESS THE REGISTRATION FORM. BY GIVING US YOUR DETAILS,
+              PURCHASING IN <b>MITHLESH.COM</b> WILL BE FASTER AND AN ENJOYABLE
+              EXPERIENCE
+            </p>
+            <br />
+
+            <Button
+              fullWidth
+              className="register-btn"
+              variant="outlined"
+              size="small"
+            >
+              Register
+            </Button>
+          </div>
         </div>
       </div>
     </div>
