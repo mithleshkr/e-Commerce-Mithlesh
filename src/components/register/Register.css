@@ -1,4 +1,38 @@
-.register-main-container{
+.register-container{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.register-form-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.space-middle{
+    display: flex;
+    width: 20%;
+}
+.register-right-side{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+}
+.rgstr-btn{
+    background-color: black !important;
+    color: orange !important;
+}
+.rgstr-btn:hover{
+    border-color: orange !important;
+}
+.img-rn{
+    box-shadow: 1px 2px 2px grey;
+    
+}
+
+
+
+/* .register-main-container{
    
     align-items: center;
     justify-content: center;
@@ -16,4 +50,4 @@
 }
 .form-registe{
     
-}
+} */

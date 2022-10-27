@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, TextField } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import { message } from "antd";
+import 'antd/dist/antd.css';
 import "./Login.css";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [email,setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = ()=>{
+    if(email==="mithlesh@gmail.com" && password ==="123456"){
+      
+      message.success("Login Successfull")
+    }
+    else{
+      message.error("Login Failed")
+    }
+  }
   return (
     <div style={{ padding: "30px" }}>
       <div className="login-container">
@@ -13,6 +29,8 @@ const Login = () => {
             label="Email"
             placeholder="Enter Your Email"
             variant="standard"
+            value={email}
+            onChange={(e)=>setEmail(e.target.value)}
           />
           <br />
           <TextField
@@ -20,10 +38,15 @@ const Login = () => {
             label="Password"
             placeholder="Enter Your Password"
             variant="standard"
+            value={password}
+            onChange={(e)=>setPassword(e.target.value)}
           />
           <br />
           <br />
-          <Button className="login-btn" variant="outlined" size="small">
+          <Button 
+          onClick={handleLogin}
+          disabled={!email + !password}
+          className="login-btn" variant="outlined" size="small">
             Login
           </Button>
         </div>
@@ -46,6 +69,7 @@ const Login = () => {
               className="register-btn"
               variant="outlined"
               size="small"
+              onClick={() => navigate("/register")}
             >
               Register
             </Button>
