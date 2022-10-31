@@ -16,16 +16,21 @@ const Header = () => {
           
             <Menu fontSize="large" component={()=><Sidebar />} />
           </div>
-          <div style={{ marginRight: "270px" }}>
-            <img
+          <div  style={{ marginRight: "320px" }}>
+          
+           {/*<h1 style={{color:"orange"}}>e-Commerce</h1>*/}
+             <img
             onClick={()=>navigate('/')}
-              height="50vh"
-              width="100px"
-              src="https://snappyfly.com/uploads/2018/06/contemporary-flash-indoors-134469.jpg"
+              height="60vh"
+              width="130px"              
+              src="https://c4.wallpaperflare.com/wallpaper/321/1011/781/abstract-vector-colorful-fire-wallpaper-preview.jpg"
+              //src="https://snappyfly.com/uploads/2018/06/contemporary-flash-indoors-134469.jpg"
               alt="nologo"
-            />
+            /> 
           </div>
-          <div></div>
+          <div>
+          {/*<h3 style={{color:"orange"}}><span style={{color:"white"}}></span>&nbsp;{sessionStorage.getItem("Name")}</h3>*/}
+          </div>
         </div>
         <div className="search-login-div">
           <div>

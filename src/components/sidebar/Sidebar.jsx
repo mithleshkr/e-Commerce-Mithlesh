@@ -8,7 +8,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
-import { Menu } from "@mui/icons-material";
+import { Menu, Dashboard, AppRegistrationRounded,Login,Category,ShoppingCart } from "@mui/icons-material";
 import "./Sidebar.css";
 import { useNavigate } from "react-router-dom";
 
@@ -71,7 +71,7 @@ export default function Sidebar() {
               <ListItem  disablePadding>
               <ListItemButton>
                 <ListItemIcon style={{ color: "orange" }}>
-                 <MailIcon />
+                 <Dashboard />
                 </ListItemIcon>
                 <ListItemText style={{color:"orange"}} onClick={()=>navigate('/')}>Dashboard</ListItemText>
               </ListItemButton>
@@ -83,7 +83,7 @@ export default function Sidebar() {
               <ListItem  disablePadding>
               <ListItemButton>
                 <ListItemIcon style={{ color: "orange" }}>
-                 <MailIcon />
+                 <AppRegistrationRounded />
                 </ListItemIcon>
                 <ListItemText style={{color:"orange"}} onClick={()=>navigate('/register')}>Register</ListItemText>
               </ListItemButton>
@@ -95,12 +95,36 @@ export default function Sidebar() {
               <ListItem  disablePadding>
               <ListItemButton>
                 <ListItemIcon style={{ color: "orange" }}>
-                 <MailIcon />
+                 <Login />
                 </ListItemIcon>
                 <ListItemText style={{color:"orange"}} onClick={()=>navigate('/login')}>Login</ListItemText>
               </ListItemButton>
             </ListItem>
               </List>
+            </div>
+            <div>
+            <List>
+            <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon style={{ color: "orange" }}>
+               <Category />
+              </ListItemIcon>
+              <ListItemText style={{color:"orange"}} onClick={()=>navigate('/product')}>Products</ListItemText>
+            </ListItemButton>
+          </ListItem>
+            </List>
+            </div>
+            <div>
+            <List>
+            <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon style={{ color: "orange" }}>
+               <ShoppingCart />
+              </ListItemIcon>
+              <ListItemText style={{color:"orange"}} onClick={()=>navigate('/cart')}>Cart</ListItemText>
+            </ListItemButton>
+          </ListItem>
+            </List>
             </div>
           </div>
             {/* {list(anchor)} */}

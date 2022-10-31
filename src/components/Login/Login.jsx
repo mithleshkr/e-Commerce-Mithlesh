@@ -14,6 +14,9 @@ const Login = () => {
     if(email==="mithlesh@gmail.com" && password ==="123456"){
       
       message.success("Login Successfull")
+      setTimeout(()=>{
+        navigate('/product')
+      },2000)
     }
     else{
       message.error("Login Failed")

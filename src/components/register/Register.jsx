@@ -12,6 +12,8 @@ const Register = () => {
   const [mobile, setMobile] = useState("");
   const [password, setPassword] = useState("");
   const handleRegister =()=>{
+
+    sessionStorage.setItem("Name",name);
     if( mobile.length<10 ||mobile.length>10 && password.length<6  ){
       message.error("Mobile Number must be of 10 digit or password should be more than 6 character")
       
@@ -19,7 +21,7 @@ const Register = () => {
     else{
       message.success("Great! successfully registerd")
       setTimeout(()=>{
-        navigate('/')
+        navigate('/product')
       },2000)
       
     }

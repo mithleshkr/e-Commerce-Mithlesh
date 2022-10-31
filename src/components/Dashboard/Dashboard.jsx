@@ -25,7 +25,9 @@ const Dashboard = () => {
         </div>
         <div>
           <video
+           
            width="100%"
+           
             className="video-container"
             playsInline
             loop
@@ -38,7 +40,11 @@ const Dashboard = () => {
           />
         </div>
         <div>
-        contents
+        <card className="dashboard-product-card">
+        Product1
+        </card>
+
+        {/*contents*/}
         </div>
       </div>
     </div>

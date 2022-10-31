@@ -6,3 +6,8 @@
     height: 100%;
     overflow: auto;
 }
+.dashboard-product-card{
+    background-color: orange;
+    width: 600px;
+    height: 10vh;
+}
