@@ -1,0 +1,42 @@
+.kids-product{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    overflow: auto;
+    padding: 10px;
+    justify-content: space-between;
+}
+.product-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.product-details-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    width: 200px;
+    height: 40vh;
+    color: orange;
+    padding: 5px;
+}
+.product-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-kids-card{
+    background-color: black;
+    width: 200px;
+    height: 40vh;
+    color: orange;
+    text-align: center;
+    
+
+}
+.details-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

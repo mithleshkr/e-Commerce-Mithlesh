@@ -1,0 +1,27 @@
+.filter-options{
+    background-color: black;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    color: white;
+    width: 200px;
+    height: 87vh;
+    text-align: center;   
+}
+.price-option{
+    height: 20vh;
+    cursor: pointer;
+}
+.discount-option{
+    height: 20vh;
+    cursor: pointer;
+}
+.latest-options{
+    height: 20vh;
+    cursor: pointer;
+}
+.size-options{
+    height: 20vh;
+    cursor: pointer;
+}
+.option-title{
+    color: orange;
+}
