@@ -1,0 +1,59 @@
+.womens-product{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    overflow: auto;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+.product-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.product-details-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    width: 200px;
+    height: 40vh;
+    color: orange;
+    padding: 5px;
+    border-radius: 3%;
+    
+}
+.product-details-option:hover{
+    border-radius: 3%;
+    /* box-shadow: 1px 2px 2px orange; */
+    border: 1px solid orange;
+
+}
+.add-to-cart:hover{
+    color: red;
+
+}
+.like-product:hover{
+    color:red;
+}
+.product-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-kids-card{
+    background-color: black;
+    width: 200px;
+    height: 40vh;
+    color: orange;
+    text-align: center;
+    
+
+}
+.details-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

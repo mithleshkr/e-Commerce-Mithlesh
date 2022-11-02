@@ -1,6 +1,6 @@
 import React from "react";
 import Filter from "../Filter/Filter";
-import { Add, AddShoppingCart, Favorite } from "@mui/icons-material";
+import {  AddShoppingCart, Favorite } from "@mui/icons-material";
 import "./Kids.css";
 
 const Kids = () => {
@@ -21,8 +21,8 @@ const Kids = () => {
               <p>Color</p>
             </div>
             <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
             </div>
           </div>
           <div className="product-details-option">
@@ -35,8 +35,8 @@ const Kids = () => {
               <p>Color</p>
             </div>
             <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
             </div>
           </div>
           <div className="product-details-option">
@@ -49,8 +49,8 @@ const Kids = () => {
               <p>Color</p>
             </div>
             <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
             </div>
           </div>
           <div className="product-details-option">
@@ -63,67 +63,8 @@ const Kids = () => {
               <p>Color</p>
             </div>
             <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
-            </div>
-          </div>
-        </div>
-        <br/>
-        <div className="product-details">
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
-            </div>
-          </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
-            </div>
-          </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
-            </div>
-          </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
             </div>
           </div>
         </div>
@@ -139,8 +80,8 @@ const Kids = () => {
               <p>Color</p>
             </div>
             <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
             </div>
           </div>
           <div className="product-details-option">
@@ -153,8 +94,8 @@ const Kids = () => {
               <p>Color</p>
             </div>
             <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
             </div>
           </div>
           <div className="product-details-option">
@@ -167,8 +108,8 @@ const Kids = () => {
               <p>Color</p>
             </div>
             <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
             </div>
           </div>
           <div className="product-details-option">
@@ -181,8 +122,67 @@ const Kids = () => {
               <p>Color</p>
             </div>
             <div className="product-footer">
-              <AddShoppingCart />
-              <Favorite />
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div className="product-details">
+          <div className="product-details-option">
+            <img
+              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
+              alt="no_img"
+            />
+            <div className="product-footer">
+              <p>Product Details</p>
+              <p>Color</p>
+            </div>
+            <div className="product-footer">
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
+            </div>
+          </div>
+          <div className="product-details-option">
+            <img
+              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
+              alt="no_img"
+            />
+            <div className="product-footer">
+              <p>Product Details</p>
+              <p>Color</p>
+            </div>
+            <div className="product-footer">
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
+            </div>
+          </div>
+          <div className="product-details-option">
+            <img
+              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
+              alt="no_img"
+            />
+            <div className="product-footer">
+              <p>Product Details</p>
+              <p>Color</p>
+            </div>
+            <div className="product-footer">
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
+            </div>
+          </div>
+          <div className="product-details-option">
+            <img
+              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
+              alt="no_img"
+            />
+            <div className="product-footer">
+              <p>Product Details</p>
+              <p>Color</p>
+            </div>
+            <div className="product-footer">
+              <AddShoppingCart className="add-to-cart" />
+              <Favorite className="like-product" />
             </div>
           </div>
         </div>
