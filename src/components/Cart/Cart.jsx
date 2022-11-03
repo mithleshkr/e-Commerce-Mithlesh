@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { AddShoppingCart, Favorite, RemoveCircle, AddCircle,ShoppingBagRounded } from "@mui/icons-material";
+import {  RemoveCircle, AddCircle,ShoppingBagRounded } from "@mui/icons-material";
 import "./Cart.css";
 
 const Cart = () => {
