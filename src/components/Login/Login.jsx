@@ -1,15 +1,31 @@
 import React, { useState } from "react";
+
+//material ui core
 import { Button, TextField } from "@mui/material";
+
+//navigation
 import { useNavigate } from "react-router-dom";
+
+//ant design
 import { message } from "antd";
 import 'antd/dist/antd.css';
+
+//css for current component
 import "./Login.css";
 
 const Login = () => {
+
+  //for navigation
   const navigate = useNavigate();
+
+  //state for email
   const [email,setEmail] = useState("");
+
+  //state for password
   const [password, setPassword] = useState("");
 
+
+  //*function for validation of email and password and navigation for success
   const handleLogin = ()=>{
     if(email==="mithlesh@gmail.com" && password ==="123456"){
       

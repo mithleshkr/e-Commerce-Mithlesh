@@ -1,13 +1,25 @@
 import React, { useState } from "react";
 
-import {  RemoveCircle, AddCircle,ShoppingBagRounded } from "@mui/icons-material";
+//material ui icons
+import {
+  RemoveCircle,
+  AddCircle,
+  ShoppingBagRounded,
+} from "@mui/icons-material";
+
+//css for current component
 import "./Cart.css";
 
 const Cart = () => {
+  //state for counter
   const [count, setCount] = useState(1);
+
+  //*function to increase the cart item
   const handleIncrease = () => {
     setCount(count + 1);
   };
+
+  //*function to decrease the cart item
   const handleDecrease = () => {
     setCount(count - 1);
   };
@@ -26,13 +38,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
               {/* <AddShoppingCart className="add-to-cart" />
@@ -50,13 +58,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
@@ -72,13 +76,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
@@ -94,13 +94,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
@@ -119,13 +115,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
@@ -141,13 +133,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
@@ -163,13 +151,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
@@ -185,13 +169,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
@@ -210,13 +190,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
@@ -232,13 +208,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
@@ -254,13 +226,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
@@ -276,13 +244,9 @@ const Cart = () => {
             </div>
             <div className="product-footer">
               <div className="counter">
-                
-                  <RemoveCircle onClick={handleDecrease} />{" "}
-                {" "}
+                <RemoveCircle onClick={handleDecrease} />{" "}
                 <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                
-                  <AddCircle onClick={handleIncrease} />
-                
+                <AddCircle onClick={handleIncrease} />
               </div>
               <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>

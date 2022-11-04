@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import videoone from './videoone.mp4'
+import videoone from "./videoone.mp4";
 
 import "./Dashboard.css";
 
@@ -20,14 +20,10 @@ const Dashboard = () => {
   return (
     <div className="dashboard-main-container">
       <div>
-        <div>
-          
-        </div>
+        <div></div>
         <div>
           <video
-           
-           width="100%"
-           
+            width="100%"
             className="video-container"
             playsInline
             loop
@@ -40,11 +36,85 @@ const Dashboard = () => {
           />
         </div>
         <div>
-        <card className="dashboard-product-card">
-        Product1
-        </card>
+          <div className="dashboard-product-card">
+            <div>
+              <h2>Todays Deals</h2>
+            </div>
+            <div className="details-container">
+            <div className="deals-details">
+              <img
+                width="240px"
+                height="230"
+                src="https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
+                alt="no_img"
+              />
+              <div style={{display:"flex",justifyContent:"space-between"}}>
+              <p className="discount-details"><i><b>up to 50% off</b></i></p>
+              <p className="deal-dis"><b>Deal of the day</b></p>
+              </div>
+              <p>Product Name</p>
+            </div>
+            &nbsp;&nbsp;
+            <div className="deals-details">
+              <img
+                width="240px"
+                height="230"
+                src="https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
+                alt="no_img"
+              />
+              <div style={{display:"flex",justifyContent:"space-between"}}>
+              <p className="discount-details"><i><b>up to 50% off</b></i></p>
+              <p className="deal-dis"><b>Deal of the day</b></p>
+              </div>
+              <p>Product Name</p>
+            </div>
+            &nbsp;&nbsp;
+            <div className="deals-details">
+              <img
+                width="240px"
+                height="230"
+                src="https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
+                alt="no_img"
+              />
+              <div style={{display:"flex",justifyContent:"space-between"}}>
+              <p className="discount-details"><i><b>up to 50% off</b></i></p>
+              <p className="deal-dis"><b>Deal of the day</b></p>
+              </div>
+              <p>Product Name</p>
+            </div>
+            &nbsp;&nbsp;
+            <div className="deals-details">
+              <img
+                width="240px"
+                height="230"
+                src="https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
+                alt="no_img"
+              />
+              <div style={{display:"flex",justifyContent:"space-between"}}>
+              <p className="discount-details"><i><b>up to 50% off</b></i></p>
+              <p className="deal-dis"><b>Deal of the day</b></p>
+              </div>
+              <p>Product Name</p>
+            </div>
+            &nbsp;&nbsp;
+            
+            <div className="deals-details">
+              <img
+                width="240px"
+                height="230"
+                src="https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
+                alt="no_img"
+              />
+              <div style={{display:"flex",justifyContent:"space-between"}}>
+              <p className="discount-details"><i><b>up to 50% off</b></i></p>
+              <p className="deal-dis"><b>Deal of the day</b></p>
+              </div>
+              <p>Product Name</p>
+            </div>
+            </div>
+          </div>
 
-        {/*contents*/}
+          {/*contents*/}
         </div>
       </div>
     </div>

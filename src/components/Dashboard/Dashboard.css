@@ -8,6 +8,25 @@
 }
 .dashboard-product-card{
     background-color: orange;
-    width: 600px;
-    height: 10vh;
+    width: 100%;   
+    padding: 5px;
+    
+   
+}
+.deals-details{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-left: 12px;
+}
+.discount-details{
+    padding: 3px;
+    background-color: maroon;
+}
+.deal-dis{
+    color: black;
+}
+.details-container{
+    display: flex;
+    flex-direction: row;
 }
