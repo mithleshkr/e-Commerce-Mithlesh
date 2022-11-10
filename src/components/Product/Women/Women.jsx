@@ -39,8 +39,8 @@ const Women = () => {
               alt="no_img"
             />
             <div className="product-footer">
-              <p style={{color:"white"}}>Product Details</p>
-              <p title="red color" style={{backgroundColor:"red",width:"40px"}}></p>
+              <p>Product Details</p>
+              <p>Color</p>
             </div>
             <div className="product-footer">
               <AddShoppingCart

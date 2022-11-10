@@ -38,7 +38,7 @@ const Dashboard = () => {
         <div>
           <div className="dashboard-product-card">
             <div>
-              <h2>Todays Deals</h2>
+              <h2 style={{color:"orange"}}>Todays Deals</h2>
             </div>
             <div className="details-container">
             <div className="deals-details">

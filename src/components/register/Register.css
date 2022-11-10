@@ -20,7 +20,10 @@
 }
 .rgstr-btn{
     background-color: black !important;
-    color: orange !important;
+    color: orange !important;     
+    display: flex;
+    justify-content: center;
+    
 }
 .rgstr-btn:hover{
     border-color: orange !important;

@@ -3,7 +3,7 @@
     border: 1px solid rgba(0, 0, 0, 0.411);
     color: white;
     width: 200px;
-    height: 87vh;
+    overflow: auto;
     text-align: center;   
 }
 .price-option{

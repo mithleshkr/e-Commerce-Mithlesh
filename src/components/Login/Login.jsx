@@ -1,80 +1,104 @@
 import React, { useState } from "react";
 
 //material ui core
-import { Button, TextField } from "@mui/material";
+//import { Button, TextField } from "@mui/material";
 
 //navigation
 import { useNavigate } from "react-router-dom";
 
 //ant design
 import { message } from "antd";
-import 'antd/dist/antd.css';
+import "antd/dist/antd.css";
 
 //css for current component
 import "./Login.css";
+import "antd/dist/antd.css";
+
+import { Button, Form, Input } from "antd";
 
 const Login = () => {
+  const onFinish = () => {
+    console.log("Success:");
+  };
+
+  const onFinishFailed = () => {
+    console.log("Failed:");
+  };
 
   //for navigation
   const navigate = useNavigate();
 
   //state for email
-  const [email,setEmail] = useState("");
+  const [email, setEmail] = useState("");
 
   //state for password
   const [password, setPassword] = useState("");
 
-
   //*function for validation of email and password and navigation for success
-  const handleLogin = ()=>{
-    if(email==="mithlesh@gmail.com" && password ==="123456"){
-      
-      message.success("Login Successfull")
-      setTimeout(()=>{
-        navigate('/product')
-      },2000)
+  const handleLogin = () => {
+    if (email === "mithlesh@gmail.com" && password === "123456") {
+      message.success("Login Successfull");
+      setTimeout(() => {
+        navigate("/product");
+      }, 2000);
+    } else {
+      message.error("Login Failed");
     }
-    else{
-      message.error("Login Failed")
-    }
-  }
+  };
   return (
     <div style={{ padding: "30px" }}>
       <div className="login-container">
         <div className="login-form-container">
           <h3>LOGIN</h3>
-          <TextField
-            type="email"
-            label="Email"
-            placeholder="Enter Your Email"
-            variant="standard"
-            value={email}
-            onChange={(e)=>setEmail(e.target.value)}
-          />
-          <br />
-          <TextField
-            type="password"
-            label="Password"
-            placeholder="Enter Your Password"
-            variant="standard"
-            value={password}
-            onChange={(e)=>setPassword(e.target.value)}
-          />
-          <br />
-          <br />
-          <Button 
-          onClick={handleLogin}
-          disabled={!email + !password}
-          className="login-btn" variant="outlined" size="small">
-            Login
-          </Button>
+          <Form
+            name="basic"
+            labelCol={{ span: 8 }}
+            wrapperCol={{ span: 16 }}
+            initialValues={{ remember: true }}
+            onFinish={onFinish}
+            onFinishFailed={onFinishFailed}
+            autoComplete="off"
+          >
+            <Form.Item
+              label="Username"
+              name="username"
+              rules={[
+                { required: true, message: "Please input your username" },
+              ]}
+            >
+              <Input value={email} onChange={(e) => setEmail(e.target.value)} />
+            </Form.Item>
+
+            <Form.Item
+              label="Password"
+              name="password"
+              rules={[
+                { required: true, message: "Please input your password" },
+              ]}
+            >
+              <Input.Password
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </Form.Item>
+
+            <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+              <Button
+                onClick={handleLogin}
+                htmlType="submit"
+                className="login-btn"
+              >
+                Submit
+              </Button>
+            </Form.Item>
+          </Form>
         </div>
         <div className="blank-login-space">{/*  blank space */}</div>
         <div className="login-register">
           <div>
             <h3>REGISTER</h3>
-            <br />
-            <br />
+            
+            
             <p style={{ padding: "5px" }}>
               IF YOU STILL DON'T HAVE A <b>MITHLESH.COM</b> ACCOUNT, USE THIS
               OPTION TO ACCESS THE REGISTRATION FORM. BY GIVING US YOUR DETAILS,
@@ -87,7 +111,6 @@ const Login = () => {
               fullWidth
               className="register-btn"
               variant="outlined"
-              size="small"
               onClick={() => navigate("/register")}
             >
               Register
@@ -100,118 +123,3 @@ const Login = () => {
 };
 
 export default Login;
-
-// import React from "react";
-// import "antd/dist/antd.css";
-// import "./Login.css";
-// import { Form, Input } from "antd";
-// import { useNavigate } from "react-router-dom";
-
-// const Login = () => {
-//   const navigate = useNavigate();
-//   const onFinish = (values) => {
-//     console.log("Success:", values);
-//   };
-//   const onFinishFailed = (errorInfo) => {
-//     console.log("Failed:", errorInfo);
-//   };
-
-//   const registerScreen = () => {
-//     navigate("/register");
-//   };
-//   return (
-//     <div className="Login-main-container">
-//       <div className="form-container">
-//         <h3 className="login-title">Login</h3>
-//         <Form
-//           className="form-inputs-container"
-//           name="login form"
-//           labelCol={{
-//             span: 8,
-//           }}
-//           wrapperCol={{
-//             span: 16,
-//           }}
-//           initialValues={{
-//             remember: true,
-//           }}
-//           onFinish={onFinish}
-//           onFinishFailed={onFinishFailed}
-//           autoComplete="off"
-//         >
-//           <label>Email*</label>
-//           <Form.Item
-//             name="email"
-//             rules={[
-//               {
-//                 required: true,
-//                 type: "email",
-//                 message: "Please input your email!",
-//               },
-//             ]}
-//           >
-//             <Input placeholder="Enter Your Email" />
-//           </Form.Item>
-//           <label>Password*</label>
-//           <Form.Item
-//             name="password"
-//             rules={[
-//               {
-//                 required: true,
-//                 message: "Please input your password!",
-//               },
-//             ]}
-//           >
-//             <Input.Password placeholder="Enter Your Password" />
-//           </Form.Item>
-
-//           {/*  <Form.Item
-//         name="remember"
-//         valuePropName="checked"
-//         wrapperCol={{
-//           offset: 8,
-//           span: 16,
-//         }}
-//       >
-//         <Checkbox>Remember me</Checkbox>
-//       </Form.Item> */}
-
-//           {/* <Form.Item
-//         wrapperCol={{
-//           offset: 8,
-//           span: 16,
-//         }}
-//       >
-//         <Button   htmlType="submit">
-//           Submit
-//         </Button>
-//       </Form.Item> */}
-//           <div>
-//             <button className="login-button-container">Submit</button>
-//           </div>
-//         </Form>
-//       </div>
-
-//       <div className="content-container">
-//         <h3 className="login-title">Register</h3>
-//         <div>
-//           <p className="register-details-container">
-//             IF YOU STILL DON'T HAVE A <b>MITHLESH.COM</b> ACCOUNT, USE THIS
-//             OPTION TO ACCESS THE REGISTRATION FORM. BY GIVING US YOUR DETAILS,
-//             PURCHASING IN <b>MITHLESH.COM</b> WILL BE FASTER AND AN ENJOYABLE
-//             EXPERIENCE
-//           </p>
-//           <div>
-//             <button
-//               className="register-button-container"
-//               onClick={registerScreen}
-//             >
-//               Register
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-// export default Login;

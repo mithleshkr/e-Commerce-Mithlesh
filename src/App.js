@@ -11,6 +11,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Men from "./components/Product/Men/Men";
 import Women from "./components/Product/Women/Women";
 import Filter from "./components/Product/Filter/Filter";
+import Wishlist from "./components/Wishlist/Wishlist";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/women" element={<Women />} />
         <Route path="/kids" element={<Kids />} />
         <Route path="/filter" element={<Filter />} />
+        <Route path='/wishlist' element={<Wishlist />} />
       </Routes>
     </Router>
   );

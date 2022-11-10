@@ -33,6 +33,7 @@ const Kids = () => {
         <div className="product-details">
           <div className="product-details-option">
             <img
+            
               src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
               alt="no_img"
             />
