@@ -19,8 +19,8 @@ code {
   background: white;
 }
 ::-webkit-scrollbar-thumb{
-  background: orange ;
+  background: #D79028 ;
 }
 ::-webkit-scrollbar-thumb:hover{
-  background: black;
+  background: rgba(0, 0, 0, 0.432);
 }

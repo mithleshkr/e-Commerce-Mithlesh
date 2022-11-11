@@ -1,3 +1,8 @@
+.men-main-container{
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .d-flex {
   display: -webkit-box;
@@ -138,7 +143,7 @@ body {
   width: 660px;
   height: 100%;
   /* background-color: #3f96cd; */
-  background-color: black;
+  background-color: #D79028;
   position: absolute;
   left: -659px;
 }
@@ -180,7 +185,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 12px;
   text-transform: uppercase;
-  color: #8c8c8c;
+  color: #000;
 }
 
 .a-size {
@@ -198,12 +203,13 @@ body {
   width: 100%;
   bottom: -20px;
   font-family: 'PT Sans', sans-serif;
-  color: #828282;
+  color: black;
   opacity: 0;
 }
 
 .a-size .size {
-  color: #252525;
+  /* color: #252525; */
+  color: #000;
 }
 
 .cart {
@@ -212,7 +218,7 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
+   left: -5%;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: black;
@@ -234,8 +240,8 @@ body {
   transition-delay: 100ms;
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 12%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
