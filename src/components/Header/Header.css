@@ -9,9 +9,15 @@
 	top: 0;
 	z-index: 5;
 	background: #000;
-    color: #ee9d25;
+  color: #ee9d25;
     position: sticky;
 }
+/* @media only screen and (max-width:768px){
+  #headerContainer, #logoContainer, #logo,#burgerIconContainer,#headerSearchFormContainer
+  {
+      width: 168px;
+  }
+} */
 #logoContainer {
 	flex: 1;
 	height: 100%;
@@ -46,6 +52,7 @@
 }
 #headerSearchFormContainer {
 	flex: 4;
+  margin-left: 11%;
 }
 #headerCartIcon {
 	flex: 1;
@@ -170,7 +177,10 @@ ul {
     margin:0 auto;
     width:560px;
     border-radius:30px;
-    border:1px solid #D79028;
+     /* border:1px solid #D79028;  */
+    border: 1px solid #fc6262;
+
+    
   }
   .bar:hover{
     /* box-shadow: 1px 1px 8px 1px #dcdcdc; */
