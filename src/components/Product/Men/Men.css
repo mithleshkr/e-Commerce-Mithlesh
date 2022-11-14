@@ -1,8 +1,13 @@
 .men-main-container{
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  
+}
+
+.pd-filter{
+  width: 20%;
 }
 
 
@@ -48,7 +53,8 @@ body {
   padding: 15px;
   margin: 15px auto;
   /* background-color: #D79028; */
-  background:  linear-gradient(40deg,#ffd86f,#fc6262);
+  /* background:  linear-gradient(40deg,#ffd86f,#fc6262); */
+  /* background: linear-gradient(-90deg,#ffa20a 0,#fd4b0f 100%); */
   border-radius: 5px;
 }
 
@@ -147,7 +153,8 @@ body {
   height: 100%;
   /* background-color: #3f96cd; */
   /* background-color: #D79028; */
-  background-color:  linear-gradient(40deg,#ffd86f,#fc6262);
+  /* background-color:  linear-gradient(40deg,#ffd86f,#fc6262); */
+  /* background: linear-gradient(-90deg,#ffa20a 0,#fd4b0f 100%); */
   position: absolute;
   left: -659px;
 }

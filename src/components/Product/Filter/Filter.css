@@ -1,4 +1,65 @@
-.filter-options{
+
+
+.ant-btn-primary{
+    background:  linear-gradient(40deg,#ffd86f,#fc6262);
+    border-color:  #fc6262;
+   
+    
+}
+
+.ant-btn-primary:hover{
+    background:  linear-gradient(40deg,#ffd86f,#fc6262);
+    border-color:  #fc6262;
+}
+.ant-drawer-header {
+    background-color: black;
+}
+
+.ant-drawer-title{
+    color:  #fc6262;
+}
+
+.ant-drawer-close{
+    color: red;
+}
+.ant-drawer-close:hover{
+    color:#ffd86f ;
+}
+
+.ant-drawer-body{
+    /* background:  linear-gradient(40deg,#ffd86f,#fc6262); */
+    background: linear-gradient(-90deg,#ffa20a 0,#fd4b0f 100%);
+}
+
+.filter-main-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter-box{
+    
+    width: 24%;
+    
+    text-align: center;
+    color: white;
+    
+}
+.filter-cat{
+    cursor: pointer;
+}
+.filter-cat:hover{
+    background-color: #000;
+}
+
+.cat-title{
+    color: #fff;
+}
+
+
+
+/* .filter-options{
     background-color: black;
     border: 1px solid rgba(0, 0, 0, 0.411);
     color: white;
@@ -24,4 +85,4 @@
 }
 .option-title{
     color: orange;
-}
+} */

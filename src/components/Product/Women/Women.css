@@ -48,7 +48,9 @@
     padding: 15px;
     margin: 15px auto;
     /* background-color: #D79028; */
-    background:  linear-gradient(40deg,#ffd86f,#fc6262);
+    /* background:  linear-gradient(40deg,#ffd86f,#fc6262); */
+    /* background: linear-gradient(-90deg,#ffa20a 0,#fd4b0f 100%); */
+    background: #000;
     border-radius: 5px;
   }
   
@@ -75,11 +77,14 @@
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    color: #818181;
+    /* color: #818181; */
+    /* color: #ffd86f; */
+    color: black;
   }
   
   .el-wrapper:hover .add-to-cart {
     left: 50%;
+    bottom: 25%;
   }
   
   .el-wrapper:hover .img {
@@ -155,7 +160,8 @@
   .h-bg .h-bg-inner {
     width: 50%;
     height: 100%;
-    background-color: #464646;
+    background:  linear-gradient(40deg,#ffd86f,#fc6262);
+    /* background-color:rgba(255, 166, 0, 0.774) ; */
   }
   
   .info-inner {
@@ -182,14 +188,16 @@
   .info-inner .p-name {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
-    color: #252525;
+    /* color: #252525; */
+    color:#fff;
+    font-weight: bold;
   }
   
   .info-inner .p-company {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
-    color: #000;
+    color:#fff ;
   }
   
   .a-size {
@@ -207,13 +215,13 @@
     width: 100%;
     bottom: -20px;
     font-family: 'PT Sans', sans-serif;
-    color: black;
+    color:#fff ;
     opacity: 0;
   }
   
   .a-size .size {
     /* color: #252525; */
-    color: #000;
+    color:#fff ;
   }
   
   .cart {
@@ -221,7 +229,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: -5px;
      left: -5%;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -245,7 +253,7 @@
     display: block;
     position: absolute;
     top: 60%;
-    left: 12%;
+    left: 15%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
@@ -271,7 +279,7 @@
     display: block;
     position: absolute;
     top: 50%;
-    left: 110%;
+    left: 85%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
