@@ -1,10 +1,19 @@
 import React from "react";
+import Filter from "../Filter/Filter";
+import { Favorite } from "@mui/icons-material";
 import "./Women.css";
-import womenjeans from './womenjeans.jpg'
+import f1 from './f1.jpg'
+import f2 from './f2.jpg'
+import f3 from './f3.jpg'
+import f4 from './f4.jpg'
 
 const Women = () => {
   return (
-    <div>
+    <div >
+    <div style={{padding:"15px",marginLeft:"15px",marginTop:"45px"}}>
+    <Filter />
+    </div>
+    
       <div className="men-main-container">
         <div className="container page-wrapper">
           <div className="page-inner">
@@ -15,13 +24,12 @@ const Women = () => {
                     className="img"
                     height="220px"
                     width="240px"
-                    // src="http://code.slicecrowd.com/labs/4/images/t-shirt.png"
-                    src={womenjeans}
+                    src={f1}
                     alt=""
                   />
                   <div className="img-info">
                     <div className="info-inner">
-                      <span className="p-name">White Tshirt</span>
+                      <span className="p-name">Black Tshirt</span>
                       <span className="p-company">Denim</span>
                     </div>
                     <div className="a-size">
@@ -37,9 +45,11 @@ const Women = () => {
                   </div>
 
                   <a className="cart" href="#">
-                    <span className="price">$120</span>
+                    <span className="price">Rs 500</span>
                     <span className="add-to-cart">
-                      <span className="txt">Add in cart</span>
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
                     </span>
                   </a>
                 </div>
@@ -56,7 +66,7 @@ const Women = () => {
                     className="img"
                     height="220px"
                     width="240px"
-                    src="http://code.slicecrowd.com/labs/4/images/t-shirt.png"
+                    src={f2}
                     alt=""
                   />
                   <div className="img-info">
@@ -77,9 +87,11 @@ const Women = () => {
                   </div>
 
                   <a className="cart" href="#">
-                    <span className="price">$120</span>
+                    <span className="price">Rs 500</span>
                     <span className="add-to-cart">
-                      <span className="txt">Add in cart</span>
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
                     </span>
                   </a>
                 </div>
@@ -96,12 +108,12 @@ const Women = () => {
                     className="img"
                     height="220px"
                     width="240px"
-                    src="http://code.slicecrowd.com/labs/4/images/t-shirt.png"
+                    src={f3}
                     alt=""
                   />
                   <div className="img-info">
                     <div className="info-inner">
-                      <span className="p-name">White Tshirt</span>
+                      <span className="p-name">Pink Tshirt</span>
                       <span className="p-company">Denim</span>
                     </div>
                     <div className="a-size">
@@ -117,9 +129,11 @@ const Women = () => {
                   </div>
 
                   <a className="cart" href="#">
-                    <span className="price">$120</span>
+                    <span className="price">Rs 500</span>
                     <span className="add-to-cart">
-                      <span className="txt">Add in cart</span>
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
                     </span>
                   </a>
                 </div>
@@ -136,12 +150,12 @@ const Women = () => {
                     className="img"
                     height="220px"
                     width="240px"
-                    src="http://code.slicecrowd.com/labs/4/images/t-shirt.png"
+                    src={f4}
                     alt=""
                   />
                   <div className="img-info">
                     <div className="info-inner">
-                      <span className="p-name">White Tshirt</span>
+                      <span className="p-name">Grey Tshirt</span>
                       <span className="p-company">Denim</span>
                     </div>
                     <div className="a-size">
@@ -157,9 +171,11 @@ const Women = () => {
                   </div>
 
                   <a className="cart" href="#">
-                    <span className="price">$120</span>
+                    <span className="price">Rs 500</span>
                     <span className="add-to-cart">
-                      <span className="txt">Add in cart</span>
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
                     </span>
                   </a>
                 </div>
@@ -176,12 +192,12 @@ const Women = () => {
                     className="img"
                     height="220px"
                     width="240px"
-                    src="http://code.slicecrowd.com/labs/4/images/t-shirt.png"
+                    src={f3}
                     alt=""
                   />
                   <div className="img-info">
                     <div className="info-inner">
-                      <span className="p-name">White Tshirt</span>
+                      <span className="p-name">Grey Tshirt</span>
                       <span className="p-company">Denim</span>
                     </div>
                     <div className="a-size">
@@ -197,9 +213,11 @@ const Women = () => {
                   </div>
 
                   <a className="cart" href="#">
-                    <span className="price">$120</span>
+                    <span className="price">Rs 500</span>
                     <span className="add-to-cart">
-                      <span className="txt">Add in cart</span>
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
                     </span>
                   </a>
                 </div>
@@ -216,12 +234,12 @@ const Women = () => {
                     className="img"
                     height="220px"
                     width="240px"
-                    src="http://code.slicecrowd.com/labs/4/images/t-shirt.png"
+                    src={f4}
                     alt=""
                   />
                   <div className="img-info">
                     <div className="info-inner">
-                      <span className="p-name">White Tshirt</span>
+                      <span className="p-name">Black Tshirt</span>
                       <span className="p-company">Denim</span>
                     </div>
                     <div className="a-size">
@@ -237,9 +255,11 @@ const Women = () => {
                   </div>
 
                   <a className="cart" href="#">
-                    <span className="price">$120</span>
+                    <span className="price">Rs 500</span>
                     <span className="add-to-cart">
-                      <span className="txt">Add in cart</span>
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
                     </span>
                   </a>
                 </div>
@@ -256,7 +276,7 @@ const Women = () => {
                     className="img"
                     height="220px"
                     width="240px"
-                    src="http://code.slicecrowd.com/labs/4/images/t-shirt.png"
+                    src={f1}
                     alt=""
                   />
                   <div className="img-info">
@@ -277,9 +297,11 @@ const Women = () => {
                   </div>
 
                   <a className="cart" href="#">
-                    <span className="price">$120</span>
+                    <span className="price">Rs 500</span>
                     <span className="add-to-cart">
-                      <span className="txt">Add in cart</span>
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
                     </span>
                   </a>
                 </div>
@@ -296,12 +318,12 @@ const Women = () => {
                     className="img"
                     height="220px"
                     width="240px"
-                    src="http://code.slicecrowd.com/labs/4/images/t-shirt.png"
+                    src={f2}
                     alt=""
                   />
                   <div className="img-info">
                     <div className="info-inner">
-                      <span className="p-name">White Tshirt</span>
+                      <span className="p-name">Pink Tshirt</span>
                       <span className="p-company">Denim</span>
                     </div>
                     <div className="a-size">
@@ -317,9 +339,11 @@ const Women = () => {
                   </div>
 
                   <a className="cart" href="#">
-                    <span className="price">$120</span>
+                    <span className="price">Rs 500</span>
                     <span className="add-to-cart">
-                      <span className="txt">Add in cart</span>
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
                     </span>
                   </a>
                 </div>
@@ -328,7 +352,7 @@ const Women = () => {
           </div>
         </div>
       </div>
-      
+ 
     </div>
   );
 };

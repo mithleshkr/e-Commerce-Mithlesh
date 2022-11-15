@@ -189,7 +189,7 @@
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     /* color: #252525; */
-    color:#fff;
+    color: white;
     font-weight: bold;
   }
   
@@ -259,7 +259,7 @@
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 16px;
-    color: #252525;
+    color: white;
   }
   
   .cart .add-to-cart {
@@ -276,10 +276,13 @@
     -webkit-transition-delay: 100ms;
     -o-transition-delay: 100ms;
     transition-delay: 100ms;
-    display: block;
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 50%;
-    left: 85%;
+    top: 60%;
+    left: 65%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
@@ -292,6 +295,8 @@
     letter-spacing: 0.045em;
     text-transform: uppercase;
     white-space: nowrap;
+    margin-left: 100px;
+    
   }
   
 

@@ -27,8 +27,10 @@
 }
 
 .ant-drawer-body{
-    /* background:  linear-gradient(40deg,#ffd86f,#fc6262); */
-    background: linear-gradient(-90deg,#ffa20a 0,#fd4b0f 100%);
+    background:  linear-gradient(40deg,#ffd86f,#fc6262);
+    /* background: linear-gradient(-90deg,#ffa20a 0,#fd4b0f 100%); */
+    /* background: #fd4b0f; */
+    flex-wrap: wrap;
 }
 
 .filter-main-container{
@@ -50,14 +52,35 @@
     cursor: pointer;
 }
 .filter-cat:hover{
-    background-color: #000;
+    /* background:  linear-gradient(40deg,#ffd86f,#fc6262); */
+    background-color: black;
 }
 
 .cat-title{
     color: #fff;
+    /* background-color: black; */
 }
 
+.action-btn-apply{
+    color: #fc6262;
+    cursor: pointer;
+}
+.action-btn-cancel{
+    color: red;
+    cursor: pointer;
+}
+.anticon svg{
+    display: none;
+    touch-action: none;
+}
+.filter-icon{
+    color: #ee9d25;
+}
+.filter-icon:hover{
+    
+    cursor: pointer;
 
+}
 
 /* .filter-options{
     background-color: black;

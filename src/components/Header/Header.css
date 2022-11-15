@@ -7,10 +7,10 @@
 	align-items: center;
 	position: fixed;
 	top: 0;
-	z-index: 5;
+	z-index: 1;
 	background: #000;
   color: #ee9d25;
-    position: sticky;
+    position: fixed;
 }
 /* @media only screen and (max-width:768px){
   #headerContainer, #logoContainer, #logo,#burgerIconContainer,#headerSearchFormContainer
@@ -42,7 +42,7 @@
 }
 #burgerIconContainer {
 	margin: 5px;
-	cursor: pointer;
+	cursor: pointer;margin-top: 15px;
 }
 .burgerSlice {
 	height: 2px;
@@ -179,6 +179,7 @@ ul {
     border-radius:30px;
      /* border:1px solid #D79028;  */
     border: 1px solid #fc6262;
+    
 
     
   }
@@ -233,10 +234,10 @@ ul {
     border:1px solid #4885ed;
     padding: 9px 19px;
   }
-  .MuiSvgIcon-root{
+  /* .MuiSvgIcon-root{
       margin-top: 30% ;
       
-  }
+  } */
   .cart-icon{
     cursor: pointer;
   }

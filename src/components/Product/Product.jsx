@@ -52,6 +52,15 @@ const Product = () => {
    
   </div>
 </div>
+<div className="each-slide-effect">
+    <div
+    className="men-screen"
+      onClick={() => navigate("/pets")}
+      style={{ backgroundImage: `url(${men})` }}
+    >
+     
+    </div>
+  </div>
       
     </Slide>
   );

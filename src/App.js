@@ -12,6 +12,7 @@ import Men from "./components/Product/Men/Men";
 import Women from "./components/Product/Women/Women";
 import Filter from "./components/Product/Filter/Filter";
 import Wishlist from "./components/Wishlist/Wishlist";
+import Pets from "./components/Product/Pets/Pets";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/kids" element={<Kids />} />
         <Route path="/filter" element={<Filter />} />
         <Route path='/wishlist' element={<Wishlist />} />
+        <Route path='/pets' element={<Pets />} />
       </Routes>
     </Router>
   );

@@ -1,260 +1,360 @@
-import React, { useState } from "react";
-
-//material ui icons
-import {
-  RemoveCircle,
-  AddCircle,
-  ShoppingBagRounded,
-} from "@mui/icons-material";
-
-//css for current component
+import React from "react";
+import Filter from "../Product/Filter/Filter";
+import { Favorite } from "@mui/icons-material";
 import "./Cart.css";
 
+
+
+
 const Cart = () => {
-  //state for counter
-  const [count, setCount] = useState(1);
-
-  //*function to increase the cart item
-  const handleIncrease = () => {
-    setCount(count + 1);
-  };
-
-  //*function to decrease the cart item
-  const handleDecrease = () => {
-    setCount(count - 1);
-  };
   return (
-    <div>
-      <div className="cart-product">
-        <div className="product-details">
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
+    <div >
+    <div style={{padding:"15px",marginLeft:"15px",marginTop:"45px"}}>
+    <Filter />
+    </div>
+    
+      <div className="men-main-container">
+        <div className="container page-wrapper">
+          <div className="page-inner">
+            <div className="row">
+              <div className="el-wrapper">
+                <div className="box-up">
+                  <img
+                    className="img"
+                    height="220px"
+                    width="240px"
+                    src=""
+                    alt=""
+                  />
+                  <div className="img-info">
+                    <div className="info-inner">
+                      <span className="p-name">Black Tshirt</span>
+                      <span className="p-company">Denim</span>
+                    </div>
+                    <div className="a-size">
+                      Available sizes :{" "}
+                      <span className="size">S , M , L , XL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="box-down">
+                  <div className="h-bg">
+                    <div className="h-bg-inner"></div>
+                  </div>
+
+                  <a className="cart" href="#">
+                    <span className="price">Rs 500</span>
+                    <span className="add-to-cart">
+                      <span className="txt">Buy</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  >number of item</span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
-              {/* <AddShoppingCart className="add-to-cart" />
-                  <Favorite className="like-product" /> */}
-            </div>
-          </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
-              </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
-            </div>
-          </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
-              </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
-            </div>
-          </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
-              </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
           </div>
         </div>
-        <br />
-        <div className="product-details">
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
+        <div className="container page-wrapper">
+          <div className="page-inner">
+            <div className="row">
+              <div className="el-wrapper">
+                <div className="box-up">
+                  <img
+                    className="img"
+                    height="220px"
+                    width="240px"
+                    src=""
+                    alt=""
+                  />
+                  <div className="img-info">
+                    <div className="info-inner">
+                      <span className="p-name">White Tshirt</span>
+                      <span className="p-company">Denim</span>
+                    </div>
+                    <div className="a-size">
+                      Available sizes :{" "}
+                      <span className="size">S , M , L , XL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="box-down">
+                  <div className="h-bg">
+                    <div className="h-bg-inner"></div>
+                  </div>
+
+                  <a className="cart" href="#">
+                    <span className="price">Rs 500</span>
+                    <span className="add-to-cart">
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
-            </div>
-          </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
-              </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
-            </div>
-          </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
-              </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
-            </div>
-          </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
-              </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
           </div>
         </div>
-        <br />
-        <div className="product-details">
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
+        <div className="container page-wrapper">
+          <div className="page-inner">
+            <div className="row">
+              <div className="el-wrapper">
+                <div className="box-up">
+                  <img
+                    className="img"
+                    height="220px"
+                    width="240px"
+                    src=""
+                    alt=""
+                  />
+                  <div className="img-info">
+                    <div className="info-inner">
+                      <span className="p-name">Pink Tshirt</span>
+                      <span className="p-company">Denim</span>
+                    </div>
+                    <div className="a-size">
+                      Available sizes :{" "}
+                      <span className="size">S , M , L , XL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="box-down">
+                  <div className="h-bg">
+                    <div className="h-bg-inner"></div>
+                  </div>
+
+                  <a className="cart" href="#">
+                    <span className="price">Rs 500</span>
+                    <span className="add-to-cart">
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
           </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
+        </div>
+        <div className="container page-wrapper">
+          <div className="page-inner">
+            <div className="row">
+              <div className="el-wrapper">
+                <div className="box-up">
+                  <img
+                    className="img"
+                    height="220px"
+                    width="240px"
+                    src=""
+                    alt=""
+                  />
+                  <div className="img-info">
+                    <div className="info-inner">
+                      <span className="p-name">Grey Tshirt</span>
+                      <span className="p-company">Denim</span>
+                    </div>
+                    <div className="a-size">
+                      Available sizes :{" "}
+                      <span className="size">S , M , L , XL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="box-down">
+                  <div className="h-bg">
+                    <div className="h-bg-inner"></div>
+                  </div>
+
+                  <a className="cart" href="#">
+                    <span className="price">Rs 500</span>
+                    <span className="add-to-cart">
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
           </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
+        </div>
+        <div className="container page-wrapper">
+          <div className="page-inner">
+            <div className="row">
+              <div className="el-wrapper">
+                <div className="box-up">
+                  <img
+                    className="img"
+                    height="220px"
+                    width="240px"
+                    src=""
+                    alt=""
+                  />
+                  <div className="img-info">
+                    <div className="info-inner">
+                      <span className="p-name">Grey Tshirt</span>
+                      <span className="p-company">Denim</span>
+                    </div>
+                    <div className="a-size">
+                      Available sizes :{" "}
+                      <span className="size">S , M , L , XL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="box-down">
+                  <div className="h-bg">
+                    <div className="h-bg-inner"></div>
+                  </div>
+
+                  <a className="cart" href="#">
+                    <span className="price">Rs 500</span>
+                    <span className="add-to-cart">
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
             </div>
           </div>
-          <div className="product-details-option">
-            <img
-              src=" https://toppng.com/uploads/preview/1-shirt-t-shirt-kids-mockup-psd-free-download-11562999023pk7x4iaof6.png"
-              alt="no_img"
-            />
-            <div className="product-footer">
-              <p>Product Details</p>
-              <p>Color</p>
-            </div>
-            <div className="product-footer">
-              <div className="counter">
-                <RemoveCircle onClick={handleDecrease} />{" "}
-                <h3 style={{ color: "red" }}>{count} </h3>{" "}
-                <AddCircle onClick={handleIncrease} />
+        </div>
+        <div className="container page-wrapper">
+          <div className="page-inner">
+            <div className="row">
+              <div className="el-wrapper">
+                <div className="box-up">
+                  <img
+                    className="img"
+                    height="220px"
+                    width="240px"
+                    src=""
+                    alt=""
+                  />
+                  <div className="img-info">
+                    <div className="info-inner">
+                      <span className="p-name">Black Tshirt</span>
+                      <span className="p-company">Denim</span>
+                    </div>
+                    <div className="a-size">
+                      Available sizes :{" "}
+                      <span className="size">S , M , L , XL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="box-down">
+                  <div className="h-bg">
+                    <div className="h-bg-inner"></div>
+                  </div>
+
+                  <a className="cart" href="#">
+                    <span className="price">Rs 500</span>
+                    <span className="add-to-cart">
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <ShoppingBagRounded titleAccess="Buy Now" className="buynow" />
+            </div>
+          </div>
+        </div>
+        <div className="container page-wrapper">
+          <div className="page-inner">
+            <div className="row">
+              <div className="el-wrapper">
+                <div className="box-up">
+                  <img
+                    className="img"
+                    height="220px"
+                    width="240px"
+                    src=""
+                    alt=""
+                  />
+                  <div className="img-info">
+                    <div className="info-inner">
+                      <span className="p-name">White Tshirt</span>
+                      <span className="p-company">Denim</span>
+                    </div>
+                    <div className="a-size">
+                      Available sizes :{" "}
+                      <span className="size">S , M , L , XL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="box-down">
+                  <div className="h-bg">
+                    <div className="h-bg-inner"></div>
+                  </div>
+
+                  <a className="cart" href="#">
+                    <span className="price">Rs 500</span>
+                    <span className="add-to-cart">
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container page-wrapper">
+          <div className="page-inner">
+            <div className="row">
+              <div className="el-wrapper">
+                <div className="box-up">
+                  <img
+                    className="img"
+                    height="220px"
+                    width="240px"
+                    src=""
+                    alt=""
+                  />
+                  <div className="img-info">
+                    <div className="info-inner">
+                      <span className="p-name">Pink Tshirt</span>
+                      <span className="p-company">Denim</span>
+                    </div>
+                    <div className="a-size">
+                      Available sizes :{" "}
+                      <span className="size">S , M , L , XL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="box-down">
+                  <div className="h-bg">
+                    <div className="h-bg-inner"></div>
+                  </div>
+
+                  <a className="cart" href="#">
+                    <span className="price">Rs 500</span>
+                    <span className="add-to-cart">
+                      <span className="txt">Add in cart</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <span  ><Favorite fontSize="small" /></span>
+                    </span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+ 
     </div>
   );
 };
 
 export default Cart;
+

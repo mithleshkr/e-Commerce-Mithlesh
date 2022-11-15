@@ -6,6 +6,7 @@
     height: 100%;
     overflow: auto;
     background-color: black;
+    margin-top: 45px;
 }
 
 .dashboard-product-card{

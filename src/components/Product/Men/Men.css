@@ -1,8 +1,10 @@
 .men-main-container{
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+ 
+  
   
 }
 
@@ -292,7 +294,9 @@ body {
   text-transform: uppercase;
   white-space: nowrap;
 }
-
+.like-icon{
+  color:"red"
+}
 
 
 /* .mens-product{

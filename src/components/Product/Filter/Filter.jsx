@@ -16,11 +16,10 @@ const Filter = () => {
   };
 
   return (
-    <div>
+    <div style={{position:"fixed",zIndex:"1"}}>
       <Space>
-        <Button size="small" type="primary" onClick={showDrawer}>
-          Filters
-        </Button>
+        <FilterList className="filter-icon" fontSize="large" onClick={showDrawer} titleAccess="Filter" />
+          
       </Space>
       <Drawer
         title="Filters"
@@ -30,12 +29,15 @@ const Filter = () => {
         open={open}
         extra={
           <Space>
-            <Button className="filter-open-btn" onClick={onClose}>
-              Cancel
-            </Button>
-            <Button type="primary" onClick={onClose}>
+            
+           
+            <h3 className="action-btn-apply" type="primary" onClick={onClose}>
               Apply
-            </Button>
+            </h3>
+            &nbsp;
+            <h3 className="action-btn-cancel" onClick={onClose}>
+              X
+            </h3>
           </Space>
         }
       >
@@ -44,7 +46,7 @@ const Filter = () => {
       
       
       <div className="filter-box"><h3 className="cat-title"><b>Price</b></h3>
-      <hr/>
+      <hr color="white"/>
       <div >
       <p className="filter-cat">0-500</p>
       <p className="filter-cat">500-1500</p>
@@ -54,7 +56,7 @@ const Filter = () => {
       
       </div> 
       <div className="filter-box"><h3 className="cat-title"><b>Color</b></h3>
-      <hr/>
+      <hr color="white"/>
       <div>
       
       <p className="filter-cat">Blue</p>
@@ -67,7 +69,7 @@ const Filter = () => {
       </div>
       </div>
       <div className="filter-box"><h3 className="cat-title"><b>Size</b></h3>
-      <hr/>
+      <hr color="white"/>
       <div>
       
       <p className="filter-cat">Xtra small</p>
@@ -79,7 +81,7 @@ const Filter = () => {
       </div>
       </div>
       <div className="filter-box"><h3 className="cat-title"><b>Discount</b></h3>
-      <hr/>
+      <hr color="white"/>
       <div>
       
       <p className="filter-cat">10%</p>

@@ -32,7 +32,7 @@ const Register = () => {
     console.log("Failed:");
   };
   return (
-    <div style={{ padding: "30px" }}>
+    <div style={{ padding: "30px",marginTop:"45px" }}>
       <div className="register-container">
         <div className="register-form-container">
           <h3>REGISTER</h3>
